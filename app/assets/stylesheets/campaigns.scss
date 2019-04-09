@@ -108,6 +108,19 @@ body {
       }
     }
   }
+  .low-mrgn-bot {
+    margin-bottom: 2px;
+  }
+  .below-text {
+    font-size: 12px;
+    margin-bottom: 10px;
+    .italic {
+      font-style: italic;
+    }
+    .bold {
+      font-weight: bold;
+    }
+  }
   .btnNext, .btnPrevious, .btnSave {
     padding: 8px 15px;
     color: #fff !important;

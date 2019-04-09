@@ -14,7 +14,7 @@ main.col.p-0
           = link_to '#', class: "ml-2" do
             = fa_icon "caret-down"
 
-  = form_tag root_path, method: 'get' do
+  = form_tag root_path, method: 'get', id: 'campaign-form' do
     .p-3.content_main
       .row
         .col-md-9.bg-light.py-4.radius_c.shadow-sm
@@ -36,14 +36,20 @@ main.col.p-0
               .form-group
                 label Title
                 = text_field_tag :title, '', class: "form-control"
-              .form-group
+              .form-group.low-mrgn-bot
                 label Description
                 = text_area_tag :description, '', rows: "8", class: "form-control", placeholder: "Enter as much information here as possible to describe your campaign and what you are trying to achieve. Others will see this description unless the campaign is accessible to collaborators only."
+              .below-text
+                | Surround content with an asterisk on each side to make it
+                span.italic  italic.
+                |  Surround content with two asterisks on each side to make it
+                span.bold  bold.
               .text-right
-                = link_to 'Next', '', class: "btnNext btn"
+                = link_to 'Next', '', class: "btnNext btn", id: 'step1btn'
+
             #access.container.tab-pane.fade
               br/
-              h5.mb-4 This Campaign will be accessible to
+              h5.mb-4 This Campaign will be accessible to:
               .left_border.pl-2
                 .custom-control.custom-radio.mb-4
                   = radio_button_tag :accessible_to, 'everyone', true, class: "custom-control-input"

@@ -32,4 +32,4 @@ $(".check_tags input[type='checkbox']").change(function(){
   else{
     $('#'+id+'_tag').remove();
   }
-})
+});

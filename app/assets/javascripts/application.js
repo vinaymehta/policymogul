@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require jquery3
 //= require bootstrap-sprockets
+//= require jquery.validate
 //= require_tree .
 
 function removeTag(ele){
