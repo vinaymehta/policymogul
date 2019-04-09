@@ -1,0 +1,68 @@
+main.col.p-0
+  .p-0.top_column
+    .ml-sm-auto.col-sm-6.text-right.py-2.position-relative.overflow-hidden
+      .skew_bg.position-absolute.w-75.h-100
+      p.mb-0.position-relative
+        = link_to '#', class: "mr-2" do
+          = fa_icon "bell"
+        span elliot_robinson@hotmail.co.uk
+        = link_to '#', class: "ml-2" do
+          = fa_icon "caret-down"
+  .p-3.content_main
+    .row
+      .col-md-9
+        ul.nav.nav-pills.justify-content-center[role="tablist"]
+          li.nav-item
+            = link_to '1', '#new', class: 'nav-link active', :'data-toggle' => "pill"
+          li.nav-item
+            = link_to '2', '#access', class: 'nav-link', :'data-toggle' => "pill"
+          li.nav-item
+            = link_to '3', '#tags', class: 'nav-link', :'data-toggle' => "pill"
+        .tab-content
+          #new.container.tab-pane.active
+            br
+            form
+              h2.mb-4
+                | Create new Campaign
+              .form-group
+                label
+                  | Title
+                input.form-control[type="text"]
+              .form-group
+                label
+                  | Description
+                textarea.form-control[type="text" rows="8" placeholder="Enter as much information here as possible to describe your campaign and what you are trying to achieve. Others will see this description unless the campaign is accessible to collaborators only."]
+          #access.container.tab-pane.fade
+            br
+            form
+              h2.mb-4
+                | This Campaign will be accessible to
+              div
+                .custom-control.custom-radio.mb-4
+                  input#everyone.custom-control-input[type="radio" name="example1"]
+                  label.custom-control-label.pl-1[for="everyone"]
+                    strong.d-block.mb-2
+                      | Everyone
+                    |  This campaign will be visible to other Policy Mogul users and may be indexed by search engines. Specific documents, collaborators and other information you choose can be made available to campaign collaborators only.
+                .custom-control.custom-radio.mb-4
+                  input#both.custom-control-input[type="radio" name="example1"]
+                  label.custom-control-label.pl-1[for="both"]
+                    strong.d-block.mb-2
+                      | Parliamentarians and collaborators only
+                    |  Policy Mogul maintains a list of MPs and peers, and allows them and their staff to view campaigns related to their interests. Specific documents, collaborators and other information you choose can be made available to campaign collaborators only
+                .custom-control.custom-radio.mb-4
+                  input#collab.custom-control-input[type="radio" name="example1"]
+                  label.custom-control-label.pl-1[for="collab"]
+                    strong.d-block.mb-2
+                      | Collaborators only
+                    |  This campaign will not be displayed to others you will need to invite specific people in order to collaborate with them.
+          #tags.container.tab-pane.fade
+            br
+            h3
+              | Menu 2
+            p
+              | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+      .col-md-3
+        = link_to '#' do
+          = fa_icon "long-arrow-alt-left"
+          | Back to campaigns

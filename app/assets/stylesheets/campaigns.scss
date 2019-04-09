@@ -1,3 +1,77 @@
-// Place all the styles related to the campaigns controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.left_nav {
+  background-color: #00122B;
+}
+
+.link_group {
+  list-style: none;
+  li {
+    a {
+      color: #fff;
+    }
+    border-left: 5px solid transparent;
+    &.active {
+      a {
+        color: #F2A805;
+      }
+      border-left: 5px solid #F2A805;
+    }
+  }
+}
+
+.terms_column {
+  bottom: 0;
+  div {
+    border-top: 1px solid #F2A805;
+    border-bottom: 1px solid #F2A805;
+    a {
+      font-size: 12px;
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding-bottom: 4px;
+    }
+  }
+  p {
+    color: #fff;
+    font-size: 12px;
+  }
+}
+
+.top_column {
+  background-color: #F2A805;
+  p {
+    font-weight: 500;
+    color: #00122B;
+    font-size: 14px;
+    a {
+      font-weight: 500;
+      color: #00122B;
+      font-size: 14px;
+    }
+  }
+  .skew_bg {
+    background-color: #F5BD43;
+    transform: skew(45deg);
+    top: 0;
+    right: -20px;
+  }
+}
+
+.content_main .nav-pills {
+  .nav-link {
+    color: #00122B;
+    font-weight: 500;
+    &.active {
+      color: #fff;
+      background-color: #00122B;
+    }
+  }
+  .show > .nav-link {
+    color: #fff;
+    background-color: #00122B;
+  }
+}

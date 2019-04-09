@@ -5,7 +5,10 @@ html
     title Policymogul
     = csrf_meta_tags
     = csp_meta_tag
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag    'application', "https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700", media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
-    = yield
+    .container-fluid
+      .row.min-vh-100
+        = render partial: 'shared/left_bar'
+        = yield
