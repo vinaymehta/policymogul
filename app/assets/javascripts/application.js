@@ -17,21 +17,10 @@
 //= require bootstrap-sprockets
 //= require_tree .
 
-$('.btnNext').click(function() {
-  console.log("he")
-    $('.nav-pills > .nav-item > .active').parent().next('li').find('a').trigger('click');
-    $('.nav-pills > .nav-item > .active').parent().prev('li').find('a').addClass('completed');
-    $('.nav-pills > .nav-item > .active').parent().prev('li').find('.wizard_line').addClass('completed');
-});
-$('.btnPrevious').click(function() {
-    $('.nav-pills > .nav-item > .active').parent().prev('li').find('a').trigger('click');
-    $('.nav-pills > .nav-item > .active').parent().next('li').find('a').removeClass('completed');
-    $('.nav-pills > .nav-item > .active').parent().next('li').find('.wizard_line').removeClass('completed');
-});
-
-$("#side_display").click(function(){
-  $(".left_nav").addClass("active");
-});
-$(".side_close").click(function(){
-  $(".left_nav").removeClass("active");
-});
+function removeTag(ele){
+  span = $(ele).parent()
+  id = span.prop('id');
+  span.remove();
+  check_id = id.replace('_tag', '');
+  $('#'+check_id).prop('checked', false);
+}

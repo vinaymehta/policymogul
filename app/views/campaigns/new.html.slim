@@ -67,70 +67,56 @@ main.col.p-0
               br/
               h5.mb-4 Tags that describe this Campaign
               .tags_list
-                span
-                  | Energy(Policy)#{link_to 'x', '#'}
-                span
-                  | Energy(Exploration)#{link_to 'x', '#'}
-                span
-                  | Disabled#{link_to 'x', '#'}
-                span
-                  | Energy(Green Fuel)#{link_to 'x', '#'}
-                span
-                  | Energy(Efficiency)#{link_to 'x', '#'}
-                span
-                  | Envoirnment(Policy)#{link_to 'x', '#'}
-                span
-                  | Energy(Policy)#{link_to 'x', '#'}
               .add_tags.mt-3
                 = text_field_tag :tags, '', class: "form-control", placeholder: "Type to add more tags..."
                 .check_tags.p-2
                   .custom-control.custom-checkbox.mb-1
-                    = check_box_tag :tags, 'accident_n_emergency', false, class: "custom-control-input", name: "tags[]", id: 'accident_n_emergency'
+                    = check_box_tag :tags, 'Accident and emergency / A&E', false, class: "custom-control-input", name: "tags[]", id: 'accident_n_emergency'
                     label.custom-control-label for="accident_n_emergency" Accident and emergency / A&E
                   .custom-control.custom-checkbox.mb-1
-                    = check_box_tag :tags, 'active_ageing', false, class: "custom-control-input", name: "tags[]", id: 'active_ageing'
+                    = check_box_tag :tags, 'Active Ageing', false, class: "custom-control-input", name: "tags[]", id: 'active_ageing'
                     label.custom-control-label for="active_ageing" Active Ageing
                   .custom-control.custom-checkbox.mb-1
-                    = check_box_tag :tags, 'aeroplans', false, class: "custom-control-input", name: "tags[]", id: 'aeroplans'
+                    = check_box_tag :tags, 'Aeroplans', false, class: "custom-control-input", name: "tags[]", id: 'aeroplans'
                     label.custom-control-label for="aeroplans" Aeroplans
                   .custom-control.custom-checkbox.mb-1
-                    = check_box_tag :tags, 'age_of_consent', false, class: "custom-control-input", name: "tags[]", id: 'age_of_consent'
+                    = check_box_tag :tags, 'Age of consent', false, class: "custom-control-input", name: "tags[]", id: 'age_of_consent'
                     label.custom-control-label for="age_of_consent" Age of consent
                   .custom-control.custom-checkbox.mb-1
-                    = check_box_tag :tags, 'aids', false, class: "custom-control-input", name: "tags[]", id: 'aids'
+                    = check_box_tag :tags, 'AIDS', false, class: "custom-control-input", name: "tags[]", id: 'aids'
                     label.custom-control-label for="aids" AIDS
                   .custom-control.custom-checkbox.mb-1
-                    = check_box_tag :tags, 'air_conditioning', false, class: "custom-control-input", name: "tags[]", id: 'air_conditioning'
+                    = check_box_tag :tags, 'Air Conditioning', false, class: "custom-control-input", name: "tags[]", id: 'air_conditioning'
                     label.custom-control-label for="air_conditioning" Air Conditioning
                   .custom-control.custom-checkbox.mb-1
-                    = check_box_tag :tags, 'air_fares', false, class: "custom-control-input", name: "tags[]", id: 'air_fares'
+                    = check_box_tag :tags, 'Air Fares', false, class: "custom-control-input", name: "tags[]", id: 'air_fares'
                     label.custom-control-label for="air_fares" Air Fares
                   .custom-control.custom-checkbox.mb-1
-                    = check_box_tag :tags, 'air_traffic_control', false, class: "custom-control-input", name: "tags[]", id: 'air_traffic_control'
+                    = check_box_tag :tags, 'Air Traffic Control', false, class: "custom-control-input", name: "tags[]", id: 'air_traffic_control'
                     label.custom-control-label for="air_traffic_control" Air Traffic Control
                   .custom-control.custom-checkbox.mb-1
-                    = check_box_tag :tags, 'albania', false, class: "custom-control-input", name: "tags[]", id: 'albania'
+                    = check_box_tag :tags, 'Albania', false, class: "custom-control-input", name: "tags[]", id: 'albania'
                     label.custom-control-label for="albania" Albania
                   .custom-control.custom-checkbox.mb-1
-                    = check_box_tag :tags, 'environment', false, class: "custom-control-input", name: "tags[]", id: 'environment'
+                    = check_box_tag :tags, 'Environment (Environment education)', false, class: "custom-control-input", name: "tags[]", id: 'environment'
                     label.custom-control-label for="environment" Environment (Environment education)
                   .custom-control.custom-checkbox.mb-1
-                    = check_box_tag :tags, 'energy_policy', false, class: "custom-control-input", name: "tags[]", id: 'energy_policy'
+                    = check_box_tag :tags, 'Energy Policy', false, class: "custom-control-input", name: "tags[]", id: 'energy_policy'
                     label.custom-control-label for="energy_policy" Energy Policy
                   .custom-control.custom-checkbox.mb-1
-                    = check_box_tag :tags, 'energy_green_fuel', false, class: "custom-control-input", name: "tags[]", id: 'energy_green_fuel'
+                    = check_box_tag :tags, 'Energy (Green fuel)', false, class: "custom-control-input", name: "tags[]", id: 'energy_green_fuel'
                     label.custom-control-label for="energy_green_fuel" Energy (Green fuel)
                   .custom-control.custom-checkbox.mb-1
-                    = check_box_tag :tags, 'energy_exploration', false, class: "custom-control-input", name: "tags[]", id: 'energy_exploration'
+                    = check_box_tag :tags, 'Energy (Exploration)', false, class: "custom-control-input", name: "tags[]", id: 'energy_exploration'
                     label.custom-control-label for="energy_exploration" Energy (Exploration)
                   .custom-control.custom-checkbox.mb-1
-                    = check_box_tag :tags, 'energy_fossil_fuels', false, class: "custom-control-input", name: "tags[]", id: 'energy_fossil_fuels'
+                    = check_box_tag :tags, 'Energy (Fossil fuels)', false, class: "custom-control-input", name: "tags[]", id: 'energy_fossil_fuels'
                     label.custom-control-label for="energy_fossil_fuels" Energy (Fossil fuels)
                   .custom-control.custom-checkbox.mb-1
-                    = check_box_tag :tags, 'disabled', false, class: "custom-control-input", name: "tags[]", id: 'disabled'
+                    = check_box_tag :tags, 'Disabled', false, class: "custom-control-input", name: "tags[]", id: 'disabled'
                     label.custom-control-label for="disabled" Disabled
                   .custom-control.custom-checkbox.mb-1
-                    = check_box_tag :tags, 'energy_efficiency', false, class: "custom-control-input", name: "tags[]", id: 'energy_efficiency'
+                    = check_box_tag :tags, 'Energy (Efficiency)', false, class: "custom-control-input", name: "tags[]", id: 'energy_efficiency'
                     label.custom-control-label for="energy_efficiency" Energy (Efficiency)
               .text-right
                 = link_to 'Previous', '', class: "btnPrevious btn float-left"
@@ -165,3 +151,14 @@ javascript:
     $(".left_nav").removeClass("active");
     return false;
   });
+
+  $(".check_tags input[type='checkbox']").change(function(){
+    val = $(this).val()
+    id = $(this).attr('id')
+    if($(this).is(":checked")) {
+      $('.tags_list').append('<span id='+id+'_tag>'+val+'<a onclick="removeTag(this); return false;" href="#">x</a></span>')
+    }
+    else{
+      $('#'+id+'_tag').remove();
+    }
+  })
