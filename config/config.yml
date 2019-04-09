@@ -1,0 +1,11 @@
+default: &default
+  base_user: testuser
+  base_password: test1234
+
+development:
+  <<: *default
+  site_url: http://localhost:3015
+
+production:
+  <<: *default
+  site_url: https://policymogule-demo.herokuapp.com/
