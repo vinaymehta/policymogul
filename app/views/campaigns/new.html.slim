@@ -1,12 +1,11 @@
 main.col.p-0
-  = form_tag root_path, method: 'get' do
-    .px-md-3.px-3.top_column
-      .row
+  .px-md-3.px-3.top_column
+    .row
       .d-sm-block.d-md-none.back_bl.col-6.px-0.px-xs-3.py-2
         button#side_display.d-inline-block.btn
           = fa_icon "bars"
         = image_tag('logo.svg', class: 'd-inline-block')
-        .ml-md-auto.col-6.text-right.py-2.position-relative.overflow-hidden
+      .ml-md-auto.col-6.text-right.py-2.position-relative.overflow-hidden
         .skew_bg.position-absolute.w-75.h-100
         p.mb-0.position-relative
           = link_to '#', class: "mr-2" do
@@ -15,6 +14,7 @@ main.col.p-0
           = link_to '#', class: "ml-2" do
             = fa_icon "caret-down"
 
+  = form_tag root_path, method: 'get' do
     .p-3.content_main
       .row
         .col-md-9.bg-light.py-4.radius_c.shadow-sm
