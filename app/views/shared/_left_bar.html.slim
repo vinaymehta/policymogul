@@ -1,5 +1,6 @@
-aside.col-12.col-md-2.p-0.left_nav.position-relative
-  .logo.px-4.pt-4.pb-0
+aside.col-6.col-md-2.p-0.left_nav.position-relative
+  .logo.px-4.pt-4.pb-0.close_div
+    = link_to 'X', '', class: "side_close"
     = image_tag('logo.svg', class: 'mw-100')
   nav.navbar.py-2.px-0
     ul.link_group.py-2.px-0.m-0
@@ -15,4 +16,4 @@ aside.col-12.col-md-2.p-0.left_nav.position-relative
       = link_to 'Business terms & conditions', '#'
       = link_to 'Privacy Policy', '#'
     p.text-center.mb-0
-      | © PolicyMogul 2019
+      | © PolicyMogul #{Date.today.year}
