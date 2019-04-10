@@ -1,16 +1,16 @@
 $('.btnNext').click(function() {
-    $('.nav-pills > .nav-item > .active').parent().next('li').find('a').trigger('click');
-    $('.nav-pills > .nav-item > .active').parent().prev('li').find('a').addClass('completed');
-    $('.nav-pills > .nav-item > .active').parent().prev('li').find('.wizard_line').addClass('completed');
-    return false;
+  $('.nav-pills > .nav-item > .active').parent().next('li').find('a').trigger('click');
+  $('.nav-pills > .nav-item > .active').parent().prev('li').find('a').addClass('completed');
+  $('.nav-pills > .nav-item > .active').parent().prev('li').find('.wizard_line').addClass('completed');
+  return false;
 });
 
 $('.btnPrevious').click(function() {
-    prev_ele = $('.nav-pills > .nav-item > .active').parent().prev('li')
-    prev_ele.find('a').trigger('click');
-    prev_ele.find('a').removeClass('completed');
-    prev_ele.find('.wizard_line').removeClass('completed');
-    return false;
+  prev_ele = $('.nav-pills > .nav-item > .active').parent().prev('li')
+  prev_ele.find('a').trigger('click');
+  prev_ele.find('a').removeClass('completed');
+  prev_ele.find('.wizard_line').removeClass('completed');
+  return false;
 });
 
 $("#side_display").click(function(){
@@ -33,3 +33,5 @@ $(".check_tags input[type='checkbox']").change(function(){
     $('#'+id+'_tag').remove();
   }
 });
+
+$('[data-toggle="tooltip"]').tooltip();

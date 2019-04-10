@@ -1,7 +1,11 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
-
+.tooltip-inner {
+  max-width: 350px;
+  width: 350px;
+  text-align: left;
+}
 .left_nav {
   background-color: #00122B;
 }
@@ -107,6 +111,9 @@ body {
         }
       }
     }
+  }
+  .fa-question-circle {
+    margin-left: 4px;
   }
   .low-mrgn-bot {
     margin-bottom: 2px;

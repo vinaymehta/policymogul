@@ -9,7 +9,7 @@ main.col.p-0
         .skew_bg.position-absolute.w-75.h-100
         p.mb-0.position-relative
           = link_to '#', class: "mr-2" do
-            = fa_icon "bell"
+            = fa_icon "bell", type: :regular
           span.d-md-inline-block.d-none elliot_robinson@hotmail.co.uk
           = link_to '#', class: "ml-2" do
             = fa_icon "caret-down"
@@ -36,8 +36,8 @@ main.col.p-0
               h5.mb-4 Create new Campaign
               .form-group
                 label Objective
-                = fa_icon "question-circle"
-                = text_field_tag :title, '', class: "form-control"
+                i.far.fa-question-circle data-html="true" data-toggle="tooltip" title="This is your campaign name, which should be a brief summary of what your campaign is trying to achieve. For example:<br/>- Maternity Allowance for the self-employed should equal Statutory Maternity Pay<br/>- Add hand-shaking classes to the school curriculum<br/>- Make single-use plastic bags illegal in the UK"
+                = text_field_tag :objective, '', class: "form-control"
               .form-group.low-mrgn-bot
                 label Description
                 = text_area_tag :description, '', rows: "8", class: "form-control", placeholder: "Enter as much information here as possible to describe your campaign and what you are trying to achieve. Others will see this description unless the campaign is accessible to collaborators only."
