@@ -27,7 +27,7 @@ $(".check_tags input[type='checkbox']").change(function(){
   val = $(this).val()
   id = $(this).attr('id')
   if($(this).is(":checked")) {
-    $('.tags_list').append('<span id='+id+'_tag>'+val+'<a onclick="removeTag(this); return false;" href="#">x</a></span>')
+    $('.tags_list').append('<span id='+id+'_tag>'+val+'<a onclick="removeTag(this); return false;">x</a></span>')
   }
   else{
     $('#'+id+'_tag').remove();
