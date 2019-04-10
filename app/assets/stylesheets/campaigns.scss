@@ -1,11 +1,23 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
-.tooltip-inner {
-  max-width: 350px;
-  width: 350px;
-  text-align: left;
+
+.tooltip {
+  .tooltip-inner {
+    max-width: 350px;
+    text-align: left;
+    background: #747474;
+    padding: 15px 15px 1px 15px;
+  }
+  .arrow::before {
+    border-bottom-color: #747474;
+    border-top-color: #747474;
+  }
 }
+.tooltip.in {
+  opacity: 1 !important;
+}
+
 .left_nav {
   background-color: #00122B;
 }
